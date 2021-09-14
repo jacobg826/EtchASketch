@@ -10,13 +10,21 @@ const sizeLbl = document.getElementById('sizeLabel')
 
 resetBtn.addEventListener('click', reset);
 blackBtn.addEventListener('click', () => {
-    reset();
+    if(rainbow) {
+        reset();
+    }
     color = 'black'
+    blackBtn.classList.add('active');
+    rainbowBtn.classList.remove('active');
     rainbow = false
 });
 
 rainbowBtn.addEventListener('click', () => {
-    reset();
+    if(!rainbow) {
+        reset();
+    }
+    blackBtn.classList.remove('active');
+    rainbowBtn.classList.add('active');
     rainbow = true
 });
 
@@ -26,6 +34,7 @@ sizeBtn.addEventListener('click', () => {
 });
 
 
+blackBtn.classList.add('active');
 putDivs(16);
 
 function reset() {

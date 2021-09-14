@@ -17,9 +17,23 @@ body {
 
 button {
     width: 5vw;
-    height: 3vw;
+    height: 5vw;
     min-width: 70px;
     min-height: 70px;
+    background-color: white;
+    color: black;
+    border-radius: 4vw;
+    border: 0;
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.active {
+    background-color: #EC7574;
+    color: white;
 }
 
 .game {
@@ -49,21 +63,30 @@ button {
 
 #sizeLabel {
     margin-bottom: -0.02vw;
+    color: black;
 }
 
-#colorPick {
-    background-color: white; /* Green */
+input[type='color']:active {
+    transition: transform 0.05s ease-in-out;
+    transform: scale(1);
+  }
+  
+  input[type='color'] {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    width: 5vw;
-    height: 3vw;
-    min-width: 70px;
-    min-height: 70px;
-    text-decoration: none;
-    display: inline-block;
-}
+  }
+  
+  input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 
 #grid {
     display: grid;
