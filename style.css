@@ -1,0 +1,84 @@
+* {
+    font-family: 'VT323', monospace;
+    color: #EC7574;
+    text-align: center;
+}
+
+h1 {
+    font-size: 10vw;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px black;
+}
+
+body {
+    background-color: #8EBCA8;
+}
+
+button {
+    width: 5vw;
+    height: 3vw;
+    min-width: 70px;
+    min-height: 70px;
+}
+
+.game {
+    display: flex;
+    margin: auto;
+}
+
+.settings {
+    display: flex;
+    margin: auto;
+    margin-right: 5vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 5vw;
+    min-width: 70px;
+    height: 27vw;
+    padding: 2.5vw;
+    border-radius: 5vw;
+    background-color: #C8B3A1;
+}
+
+#sizePick {
+    margin-top: -0.02vw;
+    margin-bottom: 2vw;
+    width: 5vw;
+}
+
+#sizeLabel {
+    margin-bottom: -0.02vw;
+}
+
+#colorPick {
+    background-color: white; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    width: 5vw;
+    height: 3vw;
+    min-width: 70px;
+    min-height: 70px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#grid {
+    display: grid;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 32vw;
+    height: 32vw;
+    background-color: white;
+    border: 2vw solid #AE9590;
+    border-radius: 0.5vw;
+}
+
+.grid-item {
+    background-color: white;
+}
+
